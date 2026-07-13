@@ -16,11 +16,11 @@ class CfgMods
 {
 	class obscura
 	{
-		dir = "obscura/obscura";
+		dir = "obscura";
 		hideName = 0;
 		hidePicture = 0;
 		name = "obscura";
-		version = "v08.07.26";
+		version = "v13.07.26";
 		credits = "adelasia";
 		author = "adelasia";
 		extra = 0;
@@ -33,14 +33,14 @@ class CfgMods
 			{
 				files[] =
 				{
-					"obscura/obscura/gui/imagesets/obscura_set.imageset"
+					"obscura/gui/imagesets/obscura_set.imageset"
 				};
 			};
 
 			class gameScriptModule
 			{
 				value = "";
-				files[] = { "obscura/obscura/scripts/3_Game" };
+				files[] = { "obscura/scripts/3_Game" };
 			};
 		};
 	};

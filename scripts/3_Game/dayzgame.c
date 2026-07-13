@@ -17,16 +17,16 @@ modded class DayZGame
 	{
 		if (!m_ObscuraOverlayRoot)
 		{
-			m_ObscuraOverlayRoot = GetWorkspace().CreateWidgets("obscura/obscura/gui/layouts/obscura_overlay.layout");
+			m_ObscuraOverlayRoot = GetWorkspace().CreateWidgets("obscura/gui/layouts/obscura_overlay.layout");
 			if (!m_ObscuraOverlayRoot)
 				return;
 
 			m_ObscuraLayer = ImageWidget.Cast(m_ObscuraOverlayRoot.FindAnyWidget("ObscuraLayer"));
 			if (!m_ObscuraLayer)
 				return;
-		}
 
-		m_ObscuraLayer.LoadImageFile(0, "set:obscura_set image:glyph_0");
-		m_ObscuraOverlayRoot.Show(true);
+			m_ObscuraLayer.LoadImageFile(0, "set:obscura_set image:glyph_0");
+			m_ObscuraOverlayRoot.Show(true);
+		}
 	}
 }
