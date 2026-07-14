@@ -20,7 +20,7 @@ class CfgMods
 		hideName = 0;
 		hidePicture = 0;
 		name = "obscura";
-		version = "v13.07.26";
+		version = "v14.07.26";
 		credits = "adelasia";
 		author = "adelasia";
 		extra = 0;
