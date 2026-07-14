@@ -70,33 +70,38 @@ This mod prevents players from using NVIDIA Inspector LOD bias to gain an unfair
 
 ## Install
 
+This repo is source only - grab the built mod from Steam Workshop, or build it
+yourself from this source using DayZ Tools (AddonBuilder).
+
 ### Server
 
-1. Copy the `@obscura` folder into your DayZ server directory.
-2. Place `adelasia.bikey` from `@obscura/keys/` into the server `keys/` folder.
-3. Add `@obscura` to your server mod list.
-4. Set `verifySignatures = 2` in `serverDZ.cfg`.
+1. Add `@obscura` to your server mod list (Workshop) or your own built `@obscura` folder.
+2. Place `obscura.bikey` into the server `keys/` folder.
+3. Set `verifySignatures = 2` in `serverDZ.cfg`.
 
 ### Client
 
-1. Subscribe on Steam Workshop **or** copy `@obscura` into your DayZ mods folder.
+1. Subscribe on Steam Workshop **or** build `@obscura` yourself from this source.
 2. Enable `@obscura` in the launcher / DZSA mod list.
 
-The client folder must include:
+A built client folder must include:
 
 ```
 @obscura/
   addons/obscura.pbo
-  addons/obscura.pbo.adelasia.bisign
-  keys/adelasia.bikey
+  addons/obscura.pbo.obscura.bisign
+  keys/obscura.bikey
   meta.cpp
 ```
 
+> Note: the signing key was rotated on 2026-07-14 - if you have an older
+> `adelasia.bikey` from a previous release, replace it with `obscura.bikey`.
+
 ## Feedback
 
-Report bugs by [opening an issue](https://github.com/adelasia/dayz-obscura/issues).
+Report bugs by [opening an issue](https://github.com/adelasia/obscura/issues).
 
-For suggestions, questions, or general chat, [start a discussion](https://github.com/adelasia/dayz-obscura/discussions).
+For suggestions, questions, or general chat, [start a discussion](https://github.com/adelasia/obscura/discussions).
 
 ---
 
